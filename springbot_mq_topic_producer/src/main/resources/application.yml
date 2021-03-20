@@ -1,0 +1,12 @@
+server:
+  port: 6666
+spring:
+  activemq:
+    broker-url: tcp://192.168.108.129:61616 # ActiveMQ\u670D\u52A1\u5668\u7684\u5730\u5740\u548C\u7AEF\u53E3
+    user: admin
+    password: admin
+  jms:
+    pub-sub-domain: true # false\uFF1A\u4E0D\u4F7F\u7528pub-sub\uFF0C\u4E5F\u5C31\u662F\u4F7F\u7528queue\uFF1Btrue\uFF1A\u4F7F\u7528pub-sub\uFF0C\u4E5F\u5C31\u662F\u4F7F\u7528topic
+
+#\u4E3B\u9898\u7684\u540D\u79F0
+mytopic: boot-activemq-topic
